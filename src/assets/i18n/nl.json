@@ -1,4 +1,9 @@
 {
     "GREETING": "Hallo!",
-    "MESSAGE": "Welkom bij onze app."
+    "MESSAGE": "Welkom bij onze app.",
+    "DATA": "Gegevensinvoer CRUD",
+    "ADD_ITEM": "Item Toevoegen",
+    "EDIT": "Bewerken",
+    "DELETE": "Verwijderen",
+    "ENTER_ITEM": "Voer een item in"
 }

@@ -1,4 +1,9 @@
 {
     "GREETING": "¡Hola!",
-    "MESSAGE": "Bienvenido a nuestra aplicación."
+    "MESSAGE": "Bienvenido a nuestra aplicación.",
+    "DATA": "CRUD de entrada de datos",
+    "ADD_ITEM": "Agregar Ítem",
+    "EDIT": "Editar",
+    "DELETE": "Borrar",
+    "ENTER_ITEM": "Ingresar un ítem"
 }
