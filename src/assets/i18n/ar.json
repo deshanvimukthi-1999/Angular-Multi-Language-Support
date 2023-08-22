@@ -6,5 +6,6 @@
     "EDIT": "تحرير",
     "DELETE": "حذف",
     "ENTER_ITEM": "أدخل عنصرًا",
-    "DATE_TIME_EXAMPLE": "التاريخ والوقت الحالي"
+    "DATE_TIME_EXAMPLE": "التاريخ والوقت الحالي",
+    "CURRENT_DATE_TIME": "الوقت الحالي للتاريخ"
 }

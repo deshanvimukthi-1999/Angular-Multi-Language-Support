@@ -5,10 +5,13 @@ import { Component } from '@angular/core';
   templateUrl: './data-entry.component.html',
   styleUrls: ['./data-entry.component.css']
 })
+
+
 export class DataEntryComponent {
   items: string[] = [];
   newItem: string = '';
   editIndex: number | null = null;
+  
 
   addItem() {
     if (this.newItem.trim() !== '') {
