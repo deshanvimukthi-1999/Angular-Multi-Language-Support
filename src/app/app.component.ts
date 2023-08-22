@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { Directionality } from '@angular/cdk/bidi';
 
 @Component({
   selector: 'app-root',
@@ -7,12 +8,23 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(private translate: TranslateService) {
-    translate.setDefaultLang('en');
+  isRtl: boolean = false; // Initialize isRtl property
 
-    // Detect language and apply RTL class for Arabic
-    if (translate.currentLang === 'ar') {
-      document.body.classList.add('ar');
-    }
+  constructor(
+    private translate: TranslateService,
+    private dir: Directionality
+  ) {
+    translate.setDefaultLang('en');
+    this.setLanguageDirection();
+  }
+
+  switchLanguage(lang: string) {
+    this.translate.use(lang);
+    this.setLanguageDirection();
+  }
+
+  setLanguageDirection() {
+    const currentLang = this.translate.currentLang;
+    this.isRtl = currentLang === 'ar'; // Assuming Arabic is RTL
   }
 }

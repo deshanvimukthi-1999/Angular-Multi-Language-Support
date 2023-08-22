@@ -5,5 +5,6 @@
     "ADD_ITEM": "إضافة عنصر",
     "EDIT": "تحرير",
     "DELETE": "حذف",
-    "ENTER_ITEM": "أدخل عنصرًا"
+    "ENTER_ITEM": "أدخل عنصرًا",
+    "DATE_TIME_EXAMPLE": "التاريخ والوقت الحالي"
 }

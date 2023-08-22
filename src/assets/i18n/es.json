@@ -5,5 +5,6 @@
     "ADD_ITEM": "Agregar Ítem",
     "EDIT": "Editar",
     "DELETE": "Borrar",
-    "ENTER_ITEM": "Ingresar un ítem"
+    "ENTER_ITEM": "Ingresar un ítem",
+    "DATE_TIME_EXAMPLE": "Fecha y Hora Actual"
 }

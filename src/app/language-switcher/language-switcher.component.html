@@ -1,7 +1,12 @@
-<div class="container">
+<div class="container" [dir]="isRtl ? 'rtl' : 'ltr'">
   <div class="language-switcher">
-    <button *ngFor="let lang of supportedLanguages" (click)="switchLanguage(lang)" [class.active]="currentLang === lang">
-      {{ lang }}
+    <button
+      *ngFor="let lang of supportedLanguages"
+      (click)="switchLanguage(lang)"
+      [class.active]="currentLang === lang"
+      class="btn btn-language"
+    >
+      {{ lang | uppercase }}
     </button>
   </div>
 </div>
