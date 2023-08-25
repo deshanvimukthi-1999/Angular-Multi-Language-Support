@@ -12,9 +12,7 @@ export class LanguageSwitcherComponent {
   supportedLanguages: string[] = ['en', 'es', 'nl', 'ar'];
   currentLang: string;
   isRtl: boolean = false;
-
-  // Additional property to hold the translation key for the date picker button text
-  datePickerButtonTextKey: string = 'datepicker.selectDate';
+  currentTime: string = ''; 
 
   constructor(
     private _adapter: DateAdapter<any>,
@@ -23,16 +21,15 @@ export class LanguageSwitcherComponent {
   ) {
     this.currentLang = this.translate.currentLang || 'en';
     this.setLanguageDirection();
+    this.updateCurrentTime(); 
   }
 
   switchLanguage(lang: string) {
     this.translate.use(lang);
     this.currentLang = lang;
     this.setLanguageDirection();
-    this._adapter.setLocale(lang); 
-
-    // Update the translation key for the date picker button text
-    this.datePickerButtonTextKey = 'datepicker.selectDate';
+    this._adapter.setLocale(lang);
+    this.updateCurrentTime(); 
   }
 
   setLanguageDirection() {
@@ -40,5 +37,8 @@ export class LanguageSwitcherComponent {
     this.isRtl = currentLang === 'ar';
   }
 
- 
+  updateCurrentTime() {
+    const options = { hour: 'numeric', minute: 'numeric', second: 'numeric' } as Intl.DateTimeFormatOptions;
+    this.currentTime = new Intl.DateTimeFormat(this.currentLang, options).format(new Date());
+  }
 }
