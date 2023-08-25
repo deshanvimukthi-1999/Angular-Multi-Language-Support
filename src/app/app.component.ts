@@ -25,6 +25,6 @@ export class AppComponent {
 
   setLanguageDirection() {
     const currentLang = this.translate.currentLang;
-    this.isRtl = currentLang === 'ar'; // Assuming Arabic is RTL
+    this.isRtl = currentLang === 'ar'; 
   }
 }

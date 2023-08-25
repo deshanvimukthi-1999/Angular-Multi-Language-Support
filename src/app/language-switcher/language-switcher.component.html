@@ -8,5 +8,16 @@
     >
       {{ lang | uppercase }}
     </button>
+
+    <div class="date-picker-container">
+      <h2>{{ 'CURRENT_DATE_TIME' | translate }}</h2>
+
+      <mat-form-field>
+        <mat-label>{{ 'DIFFERENT_LOCALES' | translate }}</mat-label>
+        <input matInput [matDatepicker]="dp">
+        <mat-datepicker-toggle matSuffix [for]="dp"></mat-datepicker-toggle>
+        <mat-datepicker #dp></mat-datepicker>
+      </mat-form-field>
+    </div>
   </div>
 </div>

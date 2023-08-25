@@ -1,11 +1,17 @@
-<input type="text" [(ngModel)]="newItem" placeholder="{{ 'ENTER_ITEM' | translate }}">
-<button (click)="addItem()">{{ 'ADD_ITEM' | translate }}</button>
-<ul>
-  <li *ngFor="let item of items; let i = index">
-    {{ item }}
-    <button (click)="editItem(i)">{{ 'EDIT' | translate }}</button>
-    <button (click)="deleteItem(i)">{{ 'DELETE' | translate }}</button>
-  </li>
-</ul>
+<div class="items-container">
+  <input
+    type="text"
+    [(ngModel)]="newItem"
+    placeholder="{{ 'ENTER_ITEM' | translate }}"
+    class="item-input"
+  >
+  <button (click)="addItem()" class="add-button">{{ 'ADD_ITEM' | translate }}</button>
 
-
+  <ul class="item-list">
+    <li *ngFor="let item of items; let i = index" class="item">
+      {{ item }}
+      <button (click)="editItem(i)" class="edit-button">{{ 'EDIT' | translate }}</button>
+      <button (click)="deleteItem(i)" class="delete-button">{{ 'DELETE' | translate }}</button>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,36 @@
+
+  .language-switcher {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btn-language {
+    margin: 5px;
+    padding: 8px 16px;
+    border: none;
+    background-color: #eeeeee;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .btn-language.active {
+    background-color: #3498db;
+    color: #ffffff;
+  }
+  
+  .date-picker-container {
+    margin-top: 20px;
+  }
+  
+  mat-form-field {
+    width: 100%;
+  }
+  
+  mat-datepicker-toggle {
+    cursor: pointer;
+  }

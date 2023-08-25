@@ -7,5 +7,10 @@
     "DELETE": "حذف",
     "ENTER_ITEM": "أدخل عنصرًا",
     "DATE_TIME_EXAMPLE": "التاريخ والوقت الحالي",
-    "CURRENT_DATE_TIME": "الوقت الحالي للتاريخ"
+    "CURRENT_DATE_TIME": "التاريخ والوقت الحالي",
+    "DIFFERENT_LOCALES": "لغات مختلفة",
+    "SWITCH_TO_ARABIC": "تبديل للعربية",
+    "SWITCH_TO_ENGLISH": "تبديل للإنجليزية",
+    "SWITCH_TO_SPANISH": "تبديل للإسبانية",
+    "SWITCH_TO_DUTCH": "تبديل للهولندية"
 }

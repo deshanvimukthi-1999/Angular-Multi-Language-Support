@@ -6,5 +6,10 @@
     "EDIT": "Editar",
     "DELETE": "Borrar",
     "ENTER_ITEM": "Ingresar un ítem",
-    "CURRENT_DATE_TIME": "FECHA ACTUAL HORA"
+    "CURRENT_DATE_TIME": "Fecha y hora actual",
+    "DIFFERENT_LOCALES": "Diferentes idiomas",
+    "SWITCH_TO_ARABIC": "Cambiar a árabe",
+    "SWITCH_TO_ENGLISH": "Cambiar a inglés",
+    "SWITCH_TO_SPANISH": "Cambiar a español",
+    "SWITCH_TO_DUTCH": "Cambiar a holandés"
 }

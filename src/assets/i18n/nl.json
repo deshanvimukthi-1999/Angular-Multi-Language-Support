@@ -6,5 +6,10 @@
     "EDIT": "Bewerken",
     "DELETE": "Verwijderen",
     "ENTER_ITEM": "Voer een item in",
-    "CURRENT_DATE_TIME": "HUIDIGE DATUM TIJD"
+    "CURRENT_DATE_TIME": "Huidige Datum en Tijd",
+    "DIFFERENT_LOCALES": "Verschillende Talen",
+    "SWITCH_TO_ARABIC": "Overschakelen naar Arabisch",
+    "SWITCH_TO_ENGLISH": "Overschakelen naar Engels",
+    "SWITCH_TO_SPANISH": "Overschakelen naar Spaans",
+    "SWITCH_TO_DUTCH": "Overschakelen naar Nederlands"
 }

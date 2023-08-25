@@ -6,5 +6,10 @@
     "EDIT": "Edit",
     "DELETE": "Delete",
     "ENTER_ITEM": "Enter Item",
-    "CURRENT_DATE_TIME":"CURRENT DATE TIME"
+    "CURRENT_DATE_TIME": "Current Date and Time",
+    "DIFFERENT_LOCALES": "Different Locales",
+    "SWITCH_TO_ARABIC": "Switch to Arabic",
+    "SWITCH_TO_ENGLISH": "Switch to English",
+    "SWITCH_TO_SPANISH": "Switch to Spanish",
+    "SWITCH_TO_DUTCH": "Switch to Dutch"
 }
