@@ -1,40 +1,54 @@
 .container {
-    width: 80%;
-    margin: 0 auto;
-  }
-  
-  .greeting-container,
-  .crud-container {
-    text-align: center;
-  }
-  
-  .jumbotron {
-    background-color: #f5f5f5;
-    border-radius: 5px;
-    padding: 20px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-  }
-  
-  .card {
-    background-color: #f5f5f5;
-    border-radius: 5px;
-    padding: 20px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-  }
-  
-  .card-header {
-    background-color: #3498db;
-    color: #ffffff;
-    padding: 10px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-  }
-  
-  .card-title {
-    font-size: 24px;
-    margin: 0;
-  }
-  
-  .card-body {
-    margin-top: 20px;
-  }
+  width: 80%;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.language-switcher-container,
+.greeting-message-container {
+  flex: 1;
+}
+
+.language-switcher-container {
+  padding-right: 15px;
+}
+
+.greeting-message-container {
+  padding-left: 15px;
+}
+
+.greeting-message-container .jumbotron {
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+  background-color: #3498db;
+  color: #ffffff;
+  padding: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.card-title {
+  font-size: 24px;
+  margin: 0;
+}
+
+.card-body {
+  margin-top: 20px;
+}
