@@ -1,28 +1,24 @@
 <div class="container mt-5">
-    <!-- Language Switcher -->
-    <app-language-switcher></app-language-switcher>
-  
-    <!-- Greeting and Message -->
-    <div class="container mt-5">
-      <div class="jumbotron">
-        <h1 class="display-4">{{ 'GREETING' | translate }}</h1>
-        <p class="lead">{{ 'MESSAGE' | translate }}</p>
+  <!-- Language Switcher -->
+  <app-language-switcher></app-language-switcher>
+
+  <!-- Greeting and Message -->
+  <div class="greeting-container mt-5">
+    <div class="jumbotron">
+      <h1 class="display-4">{{ 'GREETING' | translate }}</h1>
+      <p class="lead">{{ 'MESSAGE' | translate }}</p>
+    </div>
+  </div>
+
+  <!-- Data Entry CRUD -->
+  <div class="crud-container mt-5">
+    <div class="card">
+      <div class="card-header">
+        <h1 class="card-title">{{ 'DATA' | translate }}</h1>
+      </div>
+      <div class="card-body">
+        <app-data-entry></app-data-entry>
       </div>
     </div>
-  
-    <!-- Data Entry CRUD -->
-    <div class="container mt-5">
-      <div class="card">
-        <div class="card-header">
-          <h1 class="card-title">{{ 'DATA' | translate}}</h1>
-        </div>
-        <div class="card-body">
-          <app-data-entry></app-data-entry>
-        </div>
-      </div>
-    </div>
+  </div>
 </div>
-
-
-  
-  

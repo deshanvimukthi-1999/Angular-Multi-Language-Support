@@ -9,7 +9,12 @@ import { DateAdapter } from '@angular/material/core';
   styleUrls: ['./language-switcher.component.css']
 })
 export class LanguageSwitcherComponent {
-  supportedLanguages: string[] = ['en', 'es', 'nl', 'ar'];
+  supportedLanguages: { code: string; name: string }[] = [
+    { code: 'en', name: 'English' },
+    { code: 'es', name: 'Español' },
+    { code: 'nl', name: 'Nederlands' },
+    { code: 'ar', name: 'العربية' } // Arabic
+  ];
   currentLang: string;
   isRtl: boolean = false;
   currentTime: string = ''; 
