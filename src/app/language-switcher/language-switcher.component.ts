@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
 import { Directionality } from '@angular/cdk/bidi';
+import { Component } from '@angular/core';
 import { DateAdapter } from '@angular/material/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-language-switcher',
@@ -13,11 +13,11 @@ export class LanguageSwitcherComponent {
     { code: 'en', name: 'English' },
     { code: 'es', name: 'Español' },
     { code: 'nl', name: 'Nederlands' },
-    { code: 'ar', name: 'العربية' } // Arabic
+    { code: 'ar', name: 'العربية' }
   ];
   currentLang: string;
   isRtl: boolean = false;
-  currentTime: string = ''; 
+  currentTime: string = '';
 
   constructor(
     private _adapter: DateAdapter<any>,
@@ -26,7 +26,7 @@ export class LanguageSwitcherComponent {
   ) {
     this.currentLang = this.translate.currentLang || 'en';
     this.setLanguageDirection();
-    this.updateCurrentTime(); 
+    this.updateCurrentTime();
   }
 
   switchLanguage(lang: string) {
@@ -34,7 +34,7 @@ export class LanguageSwitcherComponent {
     this.currentLang = lang;
     this.setLanguageDirection();
     this._adapter.setLocale(lang);
-    this.updateCurrentTime(); 
+    this.updateCurrentTime();
   }
 
   setLanguageDirection() {
